@@ -21,6 +21,10 @@
     <li><strong>Genres with the word "{{ genres_word }}":</strong> {{ num_genres_word }}</li>
     <li><strong>Books containing the letter '{{ books_word }}' in the title:</strong> {{ num_books_word }}</li>
   </ul>
+
+  <p>
+    You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.
+  </p>
 {% endblock %}
 
 <!--<li><strong>Books with the word "{{books_word }}":</strong> {{ num_books_word }}</li>-->>

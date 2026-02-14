@@ -26,3 +26,9 @@ El challenge consiste en crear una vista de todos los libros en préstamo que so
 - En `catalog/templates/catalog/` creamos una copia de `bookinstance_list_borrowed_user.html` llamada `bookinstance_list_borrowed.html` y la modificamos.
 - En la plantilla básica `base_generic.html` añadimos una sección con un enlace a la nueva vista que solo se muestra si el usuario tiene el permiso `catalog.can_mark_returned`.
 - En la página de admin, añadimos el permiso `can_mark_returned` al grupo "Librarians".
+
+# Django Tutorial Part 9: Forms
+El challenge consiste en crear formularios y vistas para editar `Book`s, de forma totalmente análoga a lo que hemos hecho para `Author`.
+- En `catalog/views.py` creamos las clases `BookCreate`, `BookUpdate` y `BookDelete` con los permisos correspondientes heredando de las clases genéricas `CreateView`, `UpdateView` y `DeleteView`.
+- En `catalog/templates/catalog` creamos las plantillas correspondientes: `book_form.html` y `book_confirm_delete.html`.
+

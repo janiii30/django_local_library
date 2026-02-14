@@ -32,7 +32,7 @@
                     <button type="submit" class="btn-sidebar btn-logout">Logout</button>
                   </form>
                 </li>
-                {% if perms.catalog.can_mark_returned %}
+                {% if user.is_staff %}
                   <hr/>
                   <p>Staff</p>
                   <li><a href="{% url 'all-borrowed' %}">All borrowed</a></li>
